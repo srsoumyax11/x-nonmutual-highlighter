@@ -1,0 +1,16 @@
+{
+  "name": "X Non-Mutual Following Highlighter",
+  "description": "Highlights Following button in red if the user does not follow you back.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
